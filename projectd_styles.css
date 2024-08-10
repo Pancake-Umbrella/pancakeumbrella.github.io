@@ -21,46 +21,16 @@
             div.container {
                 display: flex;
             }
-            div.sidebar{
-                width: 200px;
-                flex-shrink: 0;
-            }
-            div.list-view{
-                width: 100%;
-            }
             div{
                 box-sizing: border-box;
-            }
-            input.new-entry-input{
-                width: 100%;
-                box-sizing: border-box;
-                height: 50px;
-            }
-            div.checkbox-entry{
-                display: flex;
-                width: 100%;
-                margin-top: 12px;
-                background-color: aliceblue;
-                box-shadow: 0px 2px 4px rgba(0,0,0,.4);
-                /*transition: opacity 0.4s;*/
-                font-size: larger;
-            }
-            .checkbox-entry > input{
-                zoom: 2.5;
-                margin-left: 2%;
-            }
-            .checkbox-entry > p{
-                margin-left: 10%;
-            }
-            form.new-entry-form{
-                margin-bottom: 32px;
-                display: flex;
-            }
-            .done{
-                text-decoration: line-through;
             }
             .center{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+            }
+            .navigation{
+                display: flex;
+                margin: 2%;
+                justify-content: space-evenly;
             }

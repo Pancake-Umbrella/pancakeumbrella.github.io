@@ -5,62 +5,43 @@
                 margin: 0%;
                 font-family: 'Aniron', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
-            a{
-                
+            a.nav{
+                margin-left: 1%;
+                margin-right: 1%;
             }
-            p {
-                text-align: center;
+            p{
                 color: #111111;
+                margin-left: 2%;
+                margin-right: 2%;
             }
             img{
-                display: block;
+                
             }
             h1, h2, h3, h4, h5, h6{
-                text-align: center; color: darkred;
+                color: darkred;
+                margin-left: 1%;
+            }
+            h1{
+                font-size: xxx-large;
             }
             div.container {
                 display: flex;
             }
-            div.sidebar{
-                width: 200px;
-                flex-shrink: 0;
-            }
-            div.list-view{
-                width: 100%;
-            }
             div{
                 box-sizing: border-box;
             }
-            input.new-entry-input{
-                width: 100%;
-                box-sizing: border-box;
-                height: 50px;
-            }
-            div.checkbox-entry{
+            div.header{
                 display: flex;
-                width: 100%;
-                margin-top: 12px;
-                background-color: aliceblue;
-                box-shadow: 0px 2px 4px rgba(0,0,0,.4);
-                /*transition: opacity 0.4s;*/
-                font-size: larger;
-            }
-            .checkbox-entry > input{
-                zoom: 2.5;
-                margin-left: 2%;
-            }
-            .checkbox-entry > p{
-                margin-left: 10%;
-            }
-            form.new-entry-form{
-                margin-bottom: 32px;
-                display: flex;
-            }
-            .done{
-                text-decoration: line-through;
+                justify-content: center;
+                align-items: center;
             }
             .center{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+            }
+            nav.navigation{
+                display: flex;
+                margin: 2%;
+                justify-content: center;
             }
