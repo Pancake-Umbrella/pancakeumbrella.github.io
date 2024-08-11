@@ -23,18 +23,7 @@
             h1{
                 font-size: xxx-large;
             }
-            div.column{
-                width: 30%;
-                margin-bottom: 16px;
-                padding: 0 8px;
-            }
-            /* Display the columns below each other instead of side by side on small screens */
-            @media screen and (max-width: 650px) {
-                div.column {
-                    width: 100%;
-                    display: block;
-                }
-            }
+            
             div.container {
                 display: flex;
             }
@@ -57,9 +46,18 @@
                 align-items: center;
             }
             div.profile{
+                display: block;
+                width: 30%;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                margin-top: 10px;
-                margin-bottom: 20px;
+                margin: 10px;
+                margin-bottom: 10px;
+            }
+            /* Display the columns below each other instead of side by side on small screens */
+            @media screen and (max-width: 650px) {
+                div.profile {
+                    width: 100%;
+                    display: block;
+                }
             }
             div.profile_image_container{
                 aspect-ratio: 3 / 2;
@@ -80,7 +78,21 @@
                 clear: both;
                 display: table;
             }
-            div.container_scroller{
+            .prev, .next{
+                cursor: pointer;
+                margin-top: -22px;
+                padding: 16px;
+                color: black;
+                font-weight: bold;
+                font-size: xx-large;
+                transition: 0.6s ease;
+                border-radius: 10px;
+                user-select: none;
+            }
+            .prev:hover, .next:hover {
+                background-color: rgba(255,255,255,0.7);
+            }
+            /*div.container_scroller{
                 background-color: #333;
                 overflow: auto;
                 white-space: nowrap;
@@ -90,7 +102,7 @@
                 padding: 10px;
                 height: 300px;
                 width: auto;
-            }
+            }*/
             .center{
                 display: block;
                 margin-left: auto;
