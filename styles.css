@@ -58,10 +58,19 @@
             }
             div.profile{
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                margin-top: 10px;
+                margin-bottom: 20px;
             }
-            div.profile img{
-                height: 400px;
-                width: auto;
+            div.profile_image_container{
+                aspect-ratio: 3 / 2;
+            }
+            div.profile_image_container img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            div.profile_image_container:hover{
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             }
             div.profile_info{
                 padding: 0 16px;
