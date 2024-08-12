@@ -3,6 +3,7 @@
 <head>
     <title>Pancake Umbrella</title>
     <link rel="icon" type="image/gif/png" href="media/Pancake Umbrella Logo old.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css"/>
     <script src="myscripts.js"></script>
     <meta name="description" content="Pancake Umbrella, an uprising Indie Star in the Games Industry.">
@@ -25,7 +26,7 @@
         <p>Pancake Umbrella is a small Indie Studio, currently consisting of 11 students of the <a href="https://www.mediadesign.de/en">Mediadesign Hochschule Berlin</a>. 
             All our products are created 100% in-house.</p>
         <p>Our dream is to create fun and set a mark in the gaming industry by giving it our all.</p>
-        <div class="profile_slider">
+        <!--<div class="profile_slider">
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <div class="profiles_container">
                 <div class="profile" id="Carl" style="display: block">
@@ -78,9 +79,63 @@
                 </div>
             </div>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>-->
+        <div id="ProfileCarousel" class="carousel slide profile_slider" data-ride="carousel">
+            <a class="prev" href="#ProfileCarousel" data-slide="prev">&#10094;</a>
+            <div class="carousel-inner profiles_container">
+                <div class="profile carousel-item active">
+                    <div class="profile_image_container">
+                        <a target="_blank" href="http://carlblasius.my.canva.site"><img src="media/Carl_PB.jpg" alt="Carl Blasius" class="center"></a>
+                    </div>
+                    <div class="profile_info">
+                        <h2>Carl Blasius</h2>
+                        <p style="color: gray">Producer</p>
+                        <p>The captain who holds the ship afloat!</p>
+                        <p>carlft.blasius@gmail.com</p>
+                        <p><a href="https://carlblasius.my.canva.site/">Portfolio</a></p>
+                    </div>
+                </div>
+                <div class="profile carousel-item">
+                    <div class="profile_image_container">
+                        <a target="_blank" href="https://neal.fun/perfect-circle/"><img src="media/Pancake%20Umbrella%20Logo%20old.png" alt="Tobias Dietrich" class="center"></a>
+                    </div>
+                    <div class="profile_info">
+                        <h2>Tobias Dietrich</h2>
+                        <p style="color: gray">Tech Lead</p>
+                        <p>The Bavarian Barbarian Brainian.</p>
+                        <p>placeholder@mail.com</p>
+                        <p><a href="https://neal.fun/perfect-circle/">Fun</a></p>
+                    </div>
+                </div>
+                <div class="profile carousel-item">
+                    <div class="profile_image_container">
+                        <a target="_blank" href="https://florian_bodewei.artstation.com/"><img src="media/projectd_arena.png" alt="Florian Bodewei" class="center"></a>
+                    </div>
+                    <div class="profile_info">
+                        <h2>Florian Bodewei</h2>
+                        <p style="color: gray">Art Lead</p>
+                        <p>Always a tight grip on his pen.¬‿¬</p>
+                        <p>placeholder@mail.com</p>
+                        <p><a href="https://florian_bodewei.artstation.com/">Artstation</a></p>
+                    </div>
+                </div>
+                <div class="profile carousel-item">
+                    <div class="profile_image_container">
+                        <a target="_blank" href="https://neal.fun/rocks/"><img src="media/moderators_platform.png" alt="Lena Langer" class="center"></a>
+                    </div>
+                    <div class="profile_info">
+                        <h2>Lena Langer</h2>
+                        <p style="color: gray">Background Artist</p>
+                        <p>Our Grandma loves Flowers!</p>
+                        <p>placeholder@mail.com</p>
+                        <p><a href="https://neal.fun/rocks/">More fun</a></p>
+                    </div>
+                </div>
+            </div>
+            <a class="next" href="#ProfileCarousel" data-slide="next">&#10095;</a>
         </div>
         <h2>What are we working on?</h2>
-        <p>Our current obsession is our newest product <a class="nav" href="ProjectD.html" title="Project D Website"> Project D</a> (WIP name) and the founding of our studio.</p>
+        <p>Our current obsession is our newest product <a href="ProjectD.html" title="Project D Website">Project D</a> (WIP name) and the founding of our studio.</p>
         <img src="media/moderators_platform.png" alt="Cute Moderators" class="center">
     </main>
     <div class="footer-basic">
@@ -96,6 +151,9 @@
             <p class="copyright">Pancake Umbrella © 2024</p>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
 
