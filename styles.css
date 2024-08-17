@@ -35,18 +35,20 @@
                 justify-content: center;
                 align-items: center;
             }
-            div.profiles_container{
-                display: flex;
-                width: 90%;
-                aspect-ratio: 8 / 3;
-            }
             div.profile_slider{
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
+            div.profiles_container{
+                display: flex;
+                justify-content: space-around;
+                width: 90%;
+            }
+            div.profile_extender_for_carousel{
+            }
             /* Display the columns below each other instead of side by side on small screens */
-            @media screen and (max-width: 650px) {
+            @media screen and (max-width: 750px) {
                 div.profile_slider {
                     display: block;
                 }
@@ -54,18 +56,22 @@
             div.profile{
                 display: none;
                 width: 32%;
+                background-color: darkgrey;
+                border-radius: 10px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                margin: 10px;
                 margin-bottom: 10px;
+                height: calc(500px * 10vw);
             }
             /* Display the columns below each other instead of side by side on small screens */
-            @media screen and (max-width: 650px) {
+            @media screen and (max-width: 750px) {
                 div.profile {
                     width: 100%;
                 }
             }
             div.profile_image_container{
                 aspect-ratio: 3 / 2;
+                background-color: dimgrey;
+                border-radius: 10px;
             }
             div.profile_image_container img{
                 width: 100%;
@@ -76,8 +82,8 @@
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             }
             div.profile_info{
-                padding: 0 16px;
-                aspect-ratio: 2 / 1;
+                padding: 10px 16px;
+                /*aspect-ratio: 2 / 1;*/
             }
             div.profile_info::after, div.profile_slider::after {
                 content: "";
@@ -98,7 +104,7 @@
             .prev:hover, .next:hover {
                 background-color: rgba(255,255,255,0.7);
             }
-            #Carl{ order: 1; }
+            /*#Carl{ order: 1; }
             #Didi{ order: 2; }
             #Flo{ order: 3; }
             #Lena{ order: 4; }
@@ -131,7 +137,7 @@
             
             
             /*geliehen von https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once*/
-            @media (min-width: 768px) {
+            @media (min-width: 750px) {
 
                 /* show 3 items */
                 .carousel-inner .active,
