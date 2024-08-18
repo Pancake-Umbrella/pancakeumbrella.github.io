@@ -1,9 +1,31 @@
-
-            /* overwrites for every p */
             body{
                 background-color: burlywood;
-                margin: 0%;
+                margin: 0;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            aside{
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                unicode-bidi: isolate;
+            }
+            aside ul{
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0;
+                margin-inline-end: 0;
+                padding-inline-start: 40px;
+                unicode-bidi: isolate;
+            }
+            aside li{
+                display: list-item;
+                text-align: -webkit-match-parent;
+                unicode-bidi: isolate;
+            }
+            aside a{
+                display: block;
+                padding: 8px;
+                transition: .15s color;
             }
             a{
                 
@@ -12,9 +34,6 @@
                 color: #111111;
                 margin-left: 2%;
                 margin-right: 2%;
-            }
-            img{
-                
             }
             h1, h2, h3, h4, h5, h6{
                 color: darkred;
@@ -104,26 +123,22 @@
             .prev:hover, .next:hover {
                 background-color: rgba(255,255,255,0.7);
             }
-            /*#Carl{ order: 1; }
-            #Didi{ order: 2; }
-            #Flo{ order: 3; }
-            #Lena{ order: 4; }
-            /*div.container_scroller{
-                background-color: #333;
-                overflow: auto;
-                white-space: nowrap;
-                padding: 10px;
-            }
-            div.container_scroller img{
-                padding: 10px;
-                height: 300px;
-                width: auto;
-            }*/
             .center{
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
             }
+            .scaling_image{
+                max-width: 100%;
+                height: auto;
+            }
+            .socials{
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin-bottom: 0;
+            }
+            
             nav.navigation{
                 display: flex;
                 margin: 2%;
@@ -132,6 +147,20 @@
             nav.navigation a{
                 margin-left: 1%;
                 margin-right: 1%;
+            }
+            div.logo{
+                position: absolute;
+                top: 0;
+                left: 10px;
+            }
+            div.logo img{
+                width: 100px;
+            }
+            div.banner{
+                margin-bottom: 20px;
+            }
+            div.banner img{
+                width: 100vw;
             }
             
             
