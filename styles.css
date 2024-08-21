@@ -27,6 +27,12 @@
                 padding: 8px;
                 transition: .15s color;
             }
+            aside svg{
+                width: 24px;
+                height: 24px;/*
+                fill: none;/*
+                stroke: none;*/
+            }
             a{
                 
             }
