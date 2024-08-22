@@ -10,9 +10,9 @@ class Header extends HTMLElement {
                 </div>
                 <nav>
                     <ul class="main_nav">
-                        <li><a href="ProjectD.html"> The Game</a></li>
-                        <li><a href="index.html"> About Us</a></li>
-                        <li><a href="https://neal.fun/rocks/"> Fun</a></li>
+                        <li><a href="index.html"> About Us </a></li>
+                        <li><a href="ProjectD.html"> Project D </a></li>
+                        <li><a href="https://neal.fun/rocks/"> Fun </a></li>
                     </ul>
                 </nav>
                 <aside>

@@ -4,7 +4,7 @@
     <title>Project D</title>
     <link rel="icon" type="image/gif/png" href="media/Pancake Umbrella Logo old.png" />
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="projectd_styles.css"/>
+    <link rel="stylesheet" href="game_styles.css"/>
     <script src="myscripts.js"></script>
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
@@ -14,12 +14,54 @@
 <body>
     <header-component></header-component>
     <main>
-        <h1 style="text-align: center">Project D</h1>
-        <img src="media/projectd_arena.png" alt="The Level 1 Arena" width="20%" height="20%" class="center">
-        <h2>What is this game about?</h2>
-        <p>placeholder.</p>
-        <h2>Where can you get it?</h2>
-        <p>placeholder.</p>
+        <div class="game">
+            <div class="game_background-container">
+                <div class="game_background">
+                    <picture class>
+                        <img src="media/projectd_arena.png" alt="Project D Arena" class loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="game-container">
+                <div class="game_box">
+                    <a href="#" target="_blank">
+                        <img src="media/projectd_arena.png" class="game_box-cover" loading="lazy" alt="Cover" sizes="100vw, 50vw">
+                        <img src="media/Pancake%20Umbrella%20Logo%20old.png" class="game_box-logo" loading="lazy" alt="Logo" size="60vw, 30vw" style="width: 66.66%">
+                    </a>
+                </div>
+                <div class="game_description">
+                    <p><b>Release Date:</b> 2026</p>
+                    <div class="game_description-text">
+                        <h1>Smackback</h1>
+                        <p>Smackback is an epic platform fighter for up to 4 players online.<br>
+                            Be the next Star-Champion in this captivating alien TV-show by mastering the powers of several mythical beings unearthed by studying the ancient human history.<br>
+                            The stage is alive! Every round there is a different twist hindering or improving certain abilities.<br>
+                            Invite friends to best each other and find out who's the ultimate Star.</p>
+                    </div>
+                    <div class="game_description-links">
+                        <ul class="game_description-links-actions">
+                            <li>
+                                <a href="#" target="_blank" title="Watch Trailer">Watch Trailer</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="Visit Itch.io Page">Visit Itch.io Pager</a>
+                            </li>
+                        </ul>
+                        <ul class="game_description-links-socials">
+                            <li>
+                                <a href="#" target="_blank" title="Twitter">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="YouTube">YouTube</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" title="Twitch">Twitch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer-component></footer-component>
 </body>
