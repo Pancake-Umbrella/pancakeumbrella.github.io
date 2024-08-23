@@ -137,3 +137,10 @@ div.game_description-links-socials{
 div.game_description-links-socials a{
     font-size: 1.2rem;
 }
+
+div.gameplay_video{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
