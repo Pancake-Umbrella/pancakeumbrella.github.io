@@ -11,7 +11,7 @@ class Header extends HTMLElement {
                 <nav>
                     <ul class="main_nav">
                         <li><a href="index.html"> About Us </a></li>
-                        <li><a href="ProjectD.html"> Project D </a></li>
+                        <li><a href="Smackback.html"> Project D </a></li>
                         <li><a href="https://neal.fun/rocks/"> Fun </a></li>
                     </ul>
                 </nav>
