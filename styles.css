@@ -20,14 +20,17 @@
                 z-index: 100;
             }
             header a{
+                color: darkred;
+            }
+            header a:hover{
                 color: orangered;
+                text-decoration: none;
             }
             nav {
                 display: block;
                 unicode-bidi: isolate;
             }
             nav a{
-                color: darkred;
                 font-size: x-large;
                 font-weight: 900;
                 text-decoration: none;
@@ -66,6 +69,19 @@
                 display: block;
                 padding: 8px;
                 transition: .15s color;
+                color: black;
+            }
+            .itchio:hover{
+                color: #fa5c5c;
+            }
+            .discord:hover{
+                color: #5865f2;
+            }
+            .youtube:hover{
+                color: #ff0000;
+            }
+            .twitch:hover{
+                color: #6441a5;
             }
             aside svg{
                 width: 24px;
@@ -79,9 +95,6 @@
             main a{
                 color: orange;
             }
-            main a:visited{
-                 color: darkred;
-             }
             main a:hover{
                 color: orangered;
                 text-decoration: underline;
