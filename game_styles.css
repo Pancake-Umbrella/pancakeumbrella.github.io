@@ -69,11 +69,14 @@ div.game-container{
     align-items: center;
     padding: 0 2.4rem;
 }
-div.game_box{
+div.outer-game_box{
     justify-self: end;
     transform: translateY(3%);
+}
+div.game_box{
     display: grid;
-    transition: all 0.3s ease;
+    transition: all .5s ease;
+    max-width: 650px;
 }
 div.game_box a{
     position: relative;
@@ -83,7 +86,7 @@ div.game_box a{
     border-radius: .5rem;
     align-self: end;
     width: 100%;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 .game_box-logo {
     position: absolute;
@@ -91,7 +94,19 @@ div.game_box a{
     left: 50%;
     transform: translate(-50%);
     width: 66.66%;
-    transition: all .3s ease;
+    transition: all .5s ease;
+}
+div.game_box:hover{
+    transform: scale(1.02);
+}
+div.game_box:hover a{
+    outline-width: 0;
+}
+div.game_box:hover .game_box-cover{
+    box-shadow: 0 5px 5px -15px rgba(1,19,53,.2),0 10px 10px -15px rgba(1,19,53,.2),0 20px 20px -15px rgba(1,19,53,.2),0 40px 40px -15px rgba(1,19,53,.2),0 50px 50px -20px rgba(1,19,53,.2),0 70px 70px -25px rgba(1,19,53,.2)
+}
+div.game_box:hover .game_box-logo{
+    transform: translate(-50%, 5%) scale(1.05);
 }
 
 div.game_description{
