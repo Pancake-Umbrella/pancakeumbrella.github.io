@@ -1,3 +1,9 @@
+body{
+    font-family: AlienSpace, Graphik-Regular-Web, sans-serif;
+}
+h1{
+    font-family: AlienSpace-Outline, Graphik-Regular-Web, sans-serif;
+}
 div.game{
     width: 100%;
     position: relative;
@@ -8,19 +14,10 @@ div.game img{
     max-width: 100%;
 }
 div.game a{
-    font-family: Graphik-Medium-Web, sans-serif;
     font-weight: 400;
     text-decoration: none;
 }
 div.game ul{
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
     margin: 0;
     padding: 0;
 }
@@ -128,29 +125,34 @@ div.game_description-text{
     grid-column: 1 / 3;
     margin-bottom: 3.2rem;
 }
+div.game_description-text p{
+    line-height: 1.5rem;
+    font-family: Graphik-Regular-Web, sans-serif;
+    color: #d1d6d9;
+}
 div.game_description-links{
+    display: flex;
     opacity: 1;
     transform: translateY(0rem);
     margin-top: 1.6rem;
-    display: flex;
     width: 100%;
-    justify-content: space-evenly ;
-}
-div.game_description-links-actions{
-    width: 50%;
-    list-style-type: none;
-}
-div.game_description-links-actions a{
-    position: relative;
     line-height: 2;
-    display: inline-block;
+    align-items: center;
 }
-div.game_description-links-socials{
+.game_description-links-actions{
     width: 50%;
     list-style-type: none;
 }
-div.game_description-links-socials a{
-    font-size: 1.2rem;
+.game_description-links-actions a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+.game_description-links-socials{
+    width: 50%;
+    list-style-type: none;
+}
+.game_description-links-socials a{
 }
 
 div.gameplay_video{

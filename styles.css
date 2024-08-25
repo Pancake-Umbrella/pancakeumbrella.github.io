@@ -1,341 +1,355 @@
-            body{
-                background-color: #121212;
-                margin: 0;
-                font-family: Graphik-Regular-Web, sans-serif;
-            }
-            header{
-                 position: fixed;
-                 top: 0;
-                 left: 0;
-                 width: 100%;
-                 height: 75px;
-                 background: burlywood;
-                 display: flex;
-                 justify-content: space-between;
-                 box-sizing: border-box;
-                 padding: 16px 16px 0 140px;
-                 align-items: center;
-                 filter: drop-shadow(0 2px 6px transparent);
-                 transition: background .2s, filter .2s;
-                z-index: 100;
-            }
-            header a{
-                color: darkred;
-            }
-            header a:hover{
-                color: orangered;
-                text-decoration: none;
-            }
-            nav {
-                display: block;
-                unicode-bidi: isolate;
-            }
-            nav a{
-                font-size: x-large;
-                font-weight: 900;
-                text-decoration: none;
-                display: block;
-                padding: 8px;
-                position: relative;
-            }
-            .main_nav{
-                list-style: none;
-                display: flex;
-                align-items: center;
-                padding: 0;
-                margin: 0;
-                gap: 8px;
-            }
-            aside{
-                display: flex;
-                gap: 16px;
-                align-items: center;
-                unicode-bidi: isolate;
-            }
-            aside ul{
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0;
-                margin-inline-end: 0;
-                padding-inline-start: 40px;
-                unicode-bidi: isolate;
-            }
-            aside li{
-                display: list-item;
-                text-align: -webkit-match-parent;
-                unicode-bidi: isolate;
-            }
-            aside a{
-                display: block;
-                padding: 8px;
-                transition: .15s color;
-                color: black;
-            }
-            .itchio:hover{
-                color: #fa5c5c;
-            }
-            .discord:hover{
-                color: #5865f2;
-            }
-            .youtube:hover{
-                color: #ff0000;
-            }
-            .twitch:hover{
-                color: #6441a5;
-            }
-            aside svg{
-                width: 24px;
-                height: 24px;/*
-                fill: none;/*
-                stroke: none;*/
-            }
-            main{
-                margin-top: 75px;
-            }
-            main a{
-                color: orange;
-            }
-            main a:hover{
-                color: orangered;
-                text-decoration: underline;
-            }
-            p{
-                color: white;
-                margin-left: 2%;
-                margin-right: 2%;
-            }
-            h1, h2, h3, h4, h5, h6{
-                color: burlywood;
-                margin-left: 1%;
-            }
-            h1{
-                font-size: xxx-large;
-            }
-            
-            div.container {
-                display: flex;
-            }
-            div{
-                box-sizing: border-box;
-            }
-            div.header{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            div.profile_slider{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            div.profiles_container{
-                display: flex;
-                justify-content: space-around;
-                width: 90%;
-            }
-            div.profile_extender_for_carousel{
-            }
-            /* Display the columns below each other instead of side by side on small screens */
-            @media screen and (max-width: 750px) {
-                div.profile_slider {
-                    display: block;
-                }
-            }
-            div.profile{
-                display: none;
-                width: 32%;
-                background-color: #202020;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-                margin-bottom: 10px;
-                height: calc(500px * 10vw);
-            }
-            /* Display the columns below each other instead of side by side on small screens */
-            @media screen and (max-width: 750px) {
-                div.profile {
-                    width: 100%;
-                }
-            }
-            div.profile_image_container{
-                aspect-ratio: 3 / 2;
-                background-color: #404040;
-                border-radius: 10px;
-            }
-            div.profile_image_container img{
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-            div.profile_image_container:hover{
-                box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-            }
-            div.profile_info{
-                padding: 10px 16px;
-                /*aspect-ratio: 2 / 1;*/
-            }
-            div.profile_info::after, div.profile_slider::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
-            .prev, .next{
-                cursor: pointer;
-                margin-top: -22px;
-                padding: 16px;
-                color: black;
-                font-weight: bold;
-                font-size: xx-large;
-                transition: 0.6s ease;
-                border-radius: 10px;
-                user-select: none;
-            }
-            .prev:hover, .next:hover {
-                background-color: rgba(255,255,255,0.7);
-            }
-            .center{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .scaling_image{
-                max-width: 100%;
-                height: auto;
-            }
-            .socials{
-                display: flex;
-                list-style: none;
-                padding: 0;
-                margin-bottom: 0;
-            }
-            
-            nav.navigation{
-                display: flex;
-                margin: 2%;
-                justify-content: center;
-            }
-            nav.navigation a{
-                margin-left: 1%;
-                margin-right: 1%;
-            }
-            div.logo{
-                position: absolute;
-                top: 0;
-                left: 10px;
-            }
-            div.logo img{
-                width: 100px;
-            }
-            div.banner{
-                margin-bottom: 20px;
-            }
-            div.banner img{
-                width: 100%;
-            }
-            
-            
-            
-            /*geliehen von https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once*/
-            @media (min-width: 750px) {
+@font-face {
+    font-family: "AlienSpace";
+    src: url("Fonts/alien/AlienSpace.otf");
+    src: url("Fonts/alien/AlienSpace.otf") format("opentype"),
+        url("Fonts/alien/AlienSpace.ttf") format("truetype");
+}
+@font-face {
+    font-family: "AlienSpace-Outline";
+    src: url("Fonts/alien/AlienSpace-Outline.otf");
+    src: url("Fonts/alien/AlienSpace-Outline.otf") format("opentype"),
+    url("Fonts/alien/AlienSpace-Outline.ttf") format("truetype");
+}
 
-                /* show 3 items */
-                .carousel-inner .active,
-                .carousel-inner .active + .carousel-item,
-                .carousel-inner .active + .carousel-item + .carousel-item {
-                    display: block;
-                }
+body{
+    background-color: #121212;
+    margin: 0;
+    font-family: Graphik-Regular-Web, sans-serif;
+}
+header{
+    font-family: Graphik-Regular-Web, sans-serif;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 75px;
+     background: burlywood;
+     display: flex;
+     justify-content: space-between;
+     box-sizing: border-box;
+     padding: 16px 16px 0 140px;
+     align-items: center;
+     filter: drop-shadow(0 2px 6px transparent);
+     transition: background .2s, filter .2s;
+     z-index: 100;
+}
+header a{
+    color: darkred;
+}
+header a:hover{
+    color: orangered;
+    text-decoration: none;
+}
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+nav a{
+    font-size: x-large;
+    font-weight: 900;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    position: relative;
+}
+.main_nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 8px;
+}
+aside{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    unicode-bidi: isolate;
+}
+aside ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+aside li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+aside a{
+    display: block;
+    padding: 8px;
+    transition: .15s color;
+    color: black;
+}
+.itchio:hover{
+    color: #fa5c5c;
+}
+.discord:hover{
+    color: #5865f2;
+}
+.youtube:hover{
+    color: #ff0000;
+}
+.twitch:hover{
+    color: #6441a5;
+}
+aside svg{
+    width: 24px;
+    height: 24px;/*
+    fill: none;/*
+    stroke: none;*/
+}
+main{
+    margin-top: 75px;
+}
+main a{
+    color: orange;
+}
+main a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+p{
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+h1, h2, h3, h4, h5, h6{
+    color: burlywood;
+    margin-left: 1%;
+}
+h1{
+    font-size: xxx-large;
+}
 
-                .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-                .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-                .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-                    transition: none;
-                }
+div.container {
+    display: flex;
+}
+div{
+    box-sizing: border-box;
+}
+div.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.profile_slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.profiles_container{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+div.profile_extender_for_carousel{
+}
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 750px) {
+    div.profile_slider {
+        display: block;
+    }
+}
+div.profile{
+    display: none;
+    width: 32%;
+    background-color: #202020;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    height: calc(500px * 10vw);
+}
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 750px) {
+    div.profile {
+        width: 100%;
+    }
+}
+div.profile_image_container{
+    aspect-ratio: 3 / 2;
+    background-color: #404040;
+    border-radius: 10px;
+}
+div.profile_image_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+div.profile_image_container:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+div.profile_info{
+    padding: 10px 16px;
+    /*aspect-ratio: 2 / 1;*/
+}
+div.profile_info::after, div.profile_slider::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.prev, .next{
+    cursor: pointer;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: xx-large;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    user-select: none;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(255,255,255,0.7);
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scaling_image{
+    max-width: 100%;
+    height: auto;
+}
+.socials{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
 
-                .carousel-inner .carousel-item-next,
-                .carousel-inner .carousel-item-prev {
-                    position: relative;
-                    transform: translate3d(0, 0, 0);
-                }
+nav.navigation{
+    display: flex;
+    margin: 2%;
+    justify-content: center;
+}
+nav.navigation a{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+div.logo{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+div.logo img{
+    width: 100px;
+}
+div.banner{
+    margin-bottom: 20px;
+}
+div.banner img{
+    width: 100%;
+}
 
-                .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-                    position: absolute;
-                    top: 0;
-                    right: -33.3333%;
-                    z-index: -1;
-                    display: block;
-                    visibility: visible;
-                }
 
-                /* left or forward direction */
-                .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-                .carousel-item-next.carousel-item-left + .carousel-item,
-                .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-                .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-                    position: relative;
-                    transform: translate3d(-100%, 0, 0);
-                    visibility: visible;
-                }
 
-                /* farthest right hidden item must be abso position for animations */
-                .carousel-inner .carousel-item-prev.carousel-item-right {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
-                    display: block;
-                    visibility: visible;
-                }
+/*geliehen von https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once*/
+@media (min-width: 750px) {
 
-                /* right or prev direction */
-                .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-                .carousel-item-prev.carousel-item-right + .carousel-item,
-                .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-                .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-                    position: relative;
-                    transform: translate3d(100%, 0, 0);
-                    visibility: visible;
-                    display: block;
-                }
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
 
-            }
-            
-            footer{
-                padding: 20px 0;
-                background-color:black;
-                color:#4b4c4d;
-            }
-            footer ul {
-                padding:0;
-                list-style:none;
-                text-align:center;
-                font-size:18px;
-                line-height:1.6;
-                margin-bottom:0;
-            }
-            footer li {
-                padding:0 10px;
-            }
-            footer ul a {
-                color:inherit;
-                text-decoration:none;
-                opacity:0.8;
-            }
-            footer ul a:hover {
-                opacity:1;
-            }
-            footer .copyright {
-                margin-top:15px;
-                text-align:center;
-                font-size:13px;
-                color:#aaa;
-                margin-bottom:0;
-            }
-            .list-inline {
-                padding-left: 0;
-                list-style: none;
-            }
-            .list-inline-item {
-                display: inline-block;
-            }
-            .list-inline-item:not(:last-child) {
-                margin-right: 0.5rem;
-            }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+    }
+
+}
+
+footer{
+    padding: 20px 0;
+    background-color:black;
+    color:#4b4c4d;
+}
+footer ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+}
+footer li {
+    padding:0 10px;
+}
+footer ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+}
+footer ul a:hover {
+    opacity:1;
+}
+footer .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+}
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+.list-inline-item {
+    display: inline-block;
+}
+.list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
