@@ -16,6 +16,19 @@ body{
     margin: 0;
     font-family: Graphik-Regular-Web, sans-serif;
 }
+p{
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 1.5rem;
+}
+h1, h2, h3, h4, h5, h6{
+    color: burlywood;
+    margin-left: 1%;
+}
+h1{
+    font-size: xxx-large;
+}
 header{
     font-family: Graphik-Regular-Web, sans-serif;
      position: fixed;
@@ -112,18 +125,6 @@ main a{
 main a:hover{
     color: orangered;
     text-decoration: underline;
-}
-p{
-    color: white;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-h1, h2, h3, h4, h5, h6{
-    color: burlywood;
-    margin-left: 1%;
-}
-h1{
-    font-size: xxx-large;
 }
 
 div.container {
@@ -316,6 +317,7 @@ footer{
     padding: 20px 0;
     background-color:black;
     color:#4b4c4d;
+    font-family: Graphik-Regular-Web, sans-serif;
 }
 footer ul {
     padding:0;

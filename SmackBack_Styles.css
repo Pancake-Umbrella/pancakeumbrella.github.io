@@ -1,0 +1,68 @@
+.Event{
+    display: flex;
+    padding: 2.4rem;
+}
+.Event_Showreel{
+    display: flex;
+    width: 80%;
+    justify-content: right;
+}
+.Event_Showreel video{
+    width: 100%;
+}
+.Event_Description{
+    width: 40%;
+    padding-right: 2%;
+    text-align: right;
+}
+
+.Moderators{
+    display: flex;
+    padding: 2.4rem;
+}
+.Moderator_Bio{
+    padding-top: 9rem;
+    width: 80%;
+    font-family: Graphik-Regular-Web, sans-serif;
+}
+.Moderator-Slideshow{
+    position: relative;
+}
+.Moderator-Slide{
+    display: none;
+}
+.Moderator-Slide img{
+    width: 100%;
+}
+.cursor {
+    cursor: pointer;
+}
+.caption-container{
+    text-align: center;
+    background-color: #202020;
+    padding: 2px 16px;
+    color: white;
+}
+.Thumbnail_Row{
+    display: flex;
+    justify-content: center;  
+}
+.Thumbnail_Row:After{
+    content: "";
+    display: table;
+    clear: both;
+}
+.Thumbnail_Column{
+    float: left;
+    width: 14%;
+}
+.Thumbnail_Column img{
+    width: 100%;
+}
+.demo{
+    opacity: 0.6;
+}
+.active,
+.demo:hover{
+    opacity: 1;
+}

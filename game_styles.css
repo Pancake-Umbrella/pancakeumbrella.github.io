@@ -3,6 +3,7 @@ body{
 }
 h1{
     font-family: AlienSpace-Outline, Graphik-Regular-Web, sans-serif;
+    color: white;
 }
 div.game{
     width: 100%;
@@ -118,15 +119,15 @@ div.game_description a{
     color: #fff;
     transition: all .3s ease;
 }
+div.game_description a:hover{
+    color: darkorange;
+}
 div.game_description-text{
     opacity: 1;
     transform: translateY(0rem);
-    grid-row: 2 / 3;
-    grid-column: 1 / 3;
-    margin-bottom: 3.2rem;
+    margin-bottom: 1.6rem;
 }
 div.game_description-text p{
-    line-height: 1.5rem;
     font-family: Graphik-Regular-Web, sans-serif;
     color: #d1d6d9;
 }
@@ -138,6 +139,7 @@ div.game_description-links{
     width: 100%;
     line-height: 2;
     align-items: center;
+    margin-left: 2%;
 }
 .game_description-links-actions{
     width: 50%;
@@ -152,12 +154,11 @@ div.game_description-links{
     width: 50%;
     list-style-type: none;
 }
-.game_description-links-socials a{
-}
 
 div.gameplay_video{
     display: flex;
-    margin: 10px;
     align-items: center;
     justify-content: center;
+    padding: 2.4rem;
+    padding-top: 0;
 }

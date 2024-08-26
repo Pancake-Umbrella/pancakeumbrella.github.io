@@ -5,6 +5,7 @@
     <link rel="icon" type="image/gif/png" href="media/Pancake Umbrella Logo old.png" />
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="game_styles.css"/>
+    <link rel="stylesheet" href="SmackBack_Styles.css"/>
     <script src="myscripts.js"></script>
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
@@ -65,10 +66,103 @@
             </div>
         </div>
         <div class="gameplay_video">
-            <video width="90%" height="auto" autoplay muted loop>
+            <video width="100%" height="auto" autoplay muted loop>
                 <source src="media/testvideo.mp4" type="video/mp4">
-                Your Browser does not support the video tag
+                Your Browser does not support the video type
             </video>
+        </div>
+        <div class="Classes-Slider">
+            <div class="Class">
+                <div class="Class_Showreel">
+                    
+                </div>
+                <div class="Class_Description">
+
+                </div>
+            </div>
+        </div>
+        <div class="Events-Slider">
+            <div class="Event">
+                <div class="Event_Description">
+                    <h1>Blizzard</h1>
+                    <p>The background and platforms become freezing looking.</p>
+                    <p>It's snowing inside the Level.</p>
+                    <p>The movement changes to be heavier and more slippery.</p>
+                </div>
+                <div class="Event_Showreel">
+                    <video autoplay muted loop>
+                        <source src="media/testvideo.mp4" type="video/mp4">
+                        Your Browser does not support the video type
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="Moderators">
+            <div class="Moderator_Bio" style="text-align: right">
+                <h1 style="color: palegreen">Shmatrick</h1>
+                <p>A simple-minded, slow alien guy.</p>
+                <p> He is always hungry.<br> In fact, he even got his job, when he was searching for a snack in the stadium and somehow ended up in the commentators’ booth.</p>
+                <p>He likes the other commentator. He sees him as a good friend, with whom he does some fun banter.</p>
+            </div>
+            <div class="Moderators-Slideshow">
+                <div class="Moderator-Slide" style="display: block">
+                    <img src="media/Moderators/moderators_platform.png" alt="Moderators Standard">
+                </div>
+                <div class="Moderator-Slide">
+                    <img src="media/Moderators/moderatorsBlizzard.png" alt="Moderators Blizzard">
+                </div>
+                <div class="Moderator-Slide">
+                    <img src="media/Moderators/moderatorsCelebrating.png" alt="Moderators Celebrating">
+                </div>
+                <div class="Moderator-Slide">
+                    <img src="media/Moderators/moderatorsBored.png" alt="Moderators Bored">
+                </div>
+                <div class="Moderator-Slide">
+                    <img src="media/Moderators/moderatorsEventStart.png" alt="Moderators Event Start">
+                </div>
+                <div class="Moderator-Slide">
+                    <img src="media/Moderators/moderatorsLaughing.png" alt="Moderators Laughing">
+                </div>
+                <div class="Moderator-Slide">
+                    <img src="media/Moderators/moderatorsShocked.png" alt="Moderators Shocked">
+                </div>
+                
+                <div class="caption-container">
+                    <p id="caption">Moderators in their standard mood</p>
+                </div>
+                
+                <div class="Thumbnail_Row">
+                    <div class="Thumbnail_Column">
+                        <img class="demo cursor active" src="media/Moderators/moderators_platform.png" alt="Moderators in their standard mood" onclick="currentSlide(1)">
+                    </div>
+                    <div class="Thumbnail_Column">
+                        <img class="demo cursor" src="media/Moderators/moderatorsBlizzard.png" alt="Moderators when it's freezing - Like during a Blizzard Event" onclick="currentSlide(2)">
+                    </div>
+                    <div class="Thumbnail_Column">
+                        <img class="demo cursor" src="media/Moderators/moderatorsCelebrating.png" alt="Moderators celebrating a clutch moment or the winner" onclick="currentSlide(3)">
+                    </div>
+                    <div class="Thumbnail_Column">
+                        <img class="demo cursor" src="media/Moderators/moderatorsBored.png" alt="When the Moderators are bored" onclick="currentSlide(4)">
+                    </div>
+                    <div class="Thumbnail_Column">
+                        <img class="demo cursor" src="media/Moderators/moderatorsEventStart.png" alt="Moderators when an Event is about to start" onclick="currentSlide(5)">
+                    </div>
+                    <div class="Thumbnail_Column">
+                        <img class="demo cursor" src="media/Moderators/moderatorsLaughing.png" alt="Moderators when they see a hilarious situation" onclick="currentSlide(6)">
+                    </div>
+                    <div class="Thumbnail_Column">
+                        <img class="demo cursor" src="media/Moderators/moderatorsShocked.png" alt="Moderators when something shocking happens like foul play" onclick="currentSlide(7)">
+                    </div>
+                </div>
+            </div>
+            <div class="Moderator_Bio">
+                <h1 style="color: mediumpurple">Shmaddaeus</h1>
+                <p>A nerdy, octopus-looking guy.</p>
+                <p>He wants the show that he’s very professional and always knows the best move or way to fight.</p> 
+                <p>He always tries to make everything very proper, and if thinks don’t fit his own standard, he gets angry quickly.</p>
+                <p>He doesn’t really like the other guy. He thinks it’s a disgrace that they are both in the same seat.</p>
+                <p>He often tries to speak down on the other commentator and gets at them with some witty comment, but they doesn’t seem to care, or even understand.</p>
+            </div>
         </div>
     </main>
     <footer-component></footer-component>
