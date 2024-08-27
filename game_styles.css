@@ -51,7 +51,7 @@ div.game_background{
     transform: scale(1.05);
     filter: blur(10px);
 }
-div.game_background img{
+div.game_background video{
     object-fit: cover;
     width: 100%;
     height: 100%;
