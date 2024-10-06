@@ -310,7 +310,13 @@ div.banner img{
         visibility: visible;
         display: block;
     }
-
+}
+div.carousel a.prev, a.next{
+    color: black;
+}
+div.carousel a.prev:hover, a.next:hover{
+    color: black;
+    text-decoration: none;
 }
 
 footer{
