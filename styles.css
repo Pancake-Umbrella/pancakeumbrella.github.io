@@ -194,6 +194,7 @@ div.profile_info::after, div.profile_slider::after {
     display: table;
 }
 .prev, .next{
+    background-color: #404040;
     cursor: pointer;
     margin-top: -22px;
     padding: 16px;
@@ -205,7 +206,9 @@ div.profile_info::after, div.profile_slider::after {
     user-select: none;
 }
 .prev:hover, .next:hover {
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(222,184,135,1);
+    color: black;
+    text-decoration: none;
 }
 .center{
     display: block;
@@ -310,13 +313,6 @@ div.banner img{
         visibility: visible;
         display: block;
     }
-}
-div.carousel a.prev, a.next{
-    color: black;
-}
-div.carousel a.prev:hover, a.next:hover{
-    color: black;
-    text-decoration: none;
 }
 
 footer{

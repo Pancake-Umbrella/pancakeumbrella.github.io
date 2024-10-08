@@ -27,12 +27,8 @@ function showModeratorSlides(n) {
 let eventSlideIndex = 1;
 showEventSlides(eventSlideIndex);
 
-function plusSlides(n) {
+function plusEventSlides(n) {
     showEventSlides(eventSlideIndex += n);
-}
-
-function currentSlide(n) {
-    showEventSlides(eventSlideIndex = n);
 }
 
 function showEventSlides(n) {
@@ -42,6 +38,10 @@ function showEventSlides(n) {
     if (n < 1) {eventSlideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+        slides[i].classList.remove("fade");
+        slides[i].classList.add("fade-out");
     }
-    slides[eventSlideIndex-1].style.display = "block";
+    slides[eventSlideIndex-1].style.display = "flex";
+    slides[eventSlideIndex-1].classList.remove("fade-out")
+    slides[eventSlideIndex-1].classList.add("fade")
 }
