@@ -83,32 +83,34 @@
         </div>
         <div class="Events-Slider">
             <a class="prev" onclick="plusEventSlides(-1)">&#10094;</a>
-            <div class="Event fade" style="display: flex">
-                <div class="Event_Description">
-                    <h1>Blizzard</h1>
-                    <p>The background and platforms become freezing looking.</p>
-                    <p>It's snowing inside the Level.</p>
-                    <p>The movement changes to be heavier and more slippery.</p>
+            <div class="EventWrapper">
+                <div class="Event fade">
+                    <div class="Event_Description">
+                        <h1>Blizzard</h1>
+                        <p>The background and platforms become freezing looking.</p>
+                        <p>It's snowing inside the Level.</p>
+                        <p>The movement changes to be heavier and more slippery.</p>
+                    </div>
+                    <div class="Event_Showreel">
+                        <video autoplay muted loop>
+                            <source src="media/Events/Blizzard%20Event.mp4" type="video/mp4">
+                            Your Browser does not support the video type
+                        </video>
+                    </div>
                 </div>
-                <div class="Event_Showreel">
-                    <video autoplay muted loop>
-                        <source src="media/Events/Blizzard%20Example.mp4" type="video/mp4">
-                        Your Browser does not support the video type
-                    </video>
-                </div>
-            </div>
-            <div class="Event fade">
-                <div class="Event_Description">
-                    <h1>Darkness</h1>
-                    <p>The Screen turns Black because the lights go out.</p>
-                    <p>Luckily we can still see all the VFX which illuminates the environment in a different way.</p>
-                    <p>The Characters can still see what's in front of them but should beware no one sneaks up from behind.</p>
-                </div>
-                <div class="Event_Showreel">
-                    <video autoplay muted loop>
-                        <source src="media/Events/Blizzard%20Example.mp4" type="video/mp4">
-                        Your Browser does not support the video type
-                    </video>
+                <div class="Event fade-out">
+                    <div class="Event_Description">
+                        <h1>Darkness</h1>
+                        <p>The Screen turns Black because the lights go out.</p>
+                        <p>Luckily we can still see all the VFX which illuminates the environment in a different way.</p>
+                        <p>The Characters can still see what's in front of them but should beware no one sneaks up from behind.</p>
+                    </div>
+                    <div class="Event_Showreel">
+                        <video autoplay muted loop>
+                            <source src="media/Events/Darkness%20event.mp4" type="video/mp4">
+                            Your Browser does not support the video type
+                        </video>
+                    </div>
                 </div>
             </div>
             <a class="next" onclick="plusEventSlides(1)">&#10095;</a>

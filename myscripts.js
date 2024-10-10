@@ -37,11 +37,9 @@ function showEventSlides(n) {
     if (n > slides.length) {eventSlideIndex = 1}
     if (n < 1) {eventSlideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
         slides[i].classList.remove("fade");
         slides[i].classList.add("fade-out");
     }
-    slides[eventSlideIndex-1].style.display = "flex";
     slides[eventSlideIndex-1].classList.remove("fade-out")
     slides[eventSlideIndex-1].classList.add("fade")
 }
